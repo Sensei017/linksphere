@@ -80,16 +80,15 @@ export default function Login() {
             borderRadius:10, border:'1px solid var(--border)',
           }}>
             <div style={{ fontSize:'0.72rem', fontWeight:700, color:'var(--accent)', marginBottom:12, letterSpacing:'0.04em', textTransform:'uppercase' }}>
-              🧠 Powered by DSA algorithms
+              Powered by DSA algorithms
             </div>
             {[
-              ['BFS', 'Smart friend suggestions'],
-              ['DFS', 'Community detection'],
-              ['Graph', 'Network visualization'],
-            ].map(([algo, desc]) => (
-              <div key={algo} style={{ display:'flex', alignItems:'center', gap:10, marginBottom:8 }}>
-                <span className="dsa-tag">{algo}</span>
-                <span style={{ fontSize:'0.78rem', color:'var(--text2)' }}>{desc}</span>
+              'Smart friend suggestions',
+              'Community detection',
+              'Network visualization',
+            ].map(desc => (
+              <div key={desc} style={{ display:'flex', alignItems:'center', gap:10, marginBottom:8 }}>
+                <span style={{ fontSize:'0.78rem', color:'var(--text2)' }}>· {desc}</span>
               </div>
             ))}
           </div>
