@@ -127,3 +127,32 @@ a { color: inherit; text-decoration: none; }
 @media (min-width: 860px) {
   .suggestions-panel { display: block !important; }
 }
+
+/* ── Font prominence fixes ── */
+body { font-size: 15px; letter-spacing: 0.01em; }
+
+.card { padding: 22px 24px; }
+
+/* Post author names */
+a span[style*="fontWeight:700"] { font-size: 0.95rem !important; }
+
+/* Nav links */
+nav a { font-size: 0.88rem !important; letter-spacing: 0.02em; }
+
+/* Headings */
+h1, h2, h3 { font-family: 'Syne', sans-serif; font-weight: 800; letter-spacing: -0.3px; }
+
+/* Textarea placeholder */
+textarea { font-size: 0.92rem !important; }
+
+/* Topic pills */
+button[style*="borderRadius:99"] { font-size: 0.76rem !important; }
+
+/* Post content text */
+div[style*="lineHeight:1.75"] { font-size: 0.92rem !important; color: var(--text) !important; }
+
+/* Timestamps */
+div[style*="color:'var(--muted)'"] { font-size: 0.75rem; }
+
+/* Brand name in nav */
+a[style*="fontWeight:800"] { font-size: 1.15rem !important; }

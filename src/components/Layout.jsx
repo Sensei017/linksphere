@@ -65,16 +65,11 @@ export default function Layout({ children }) {
         {/* User */}
         <div style={{ display:'flex', alignItems:'center', gap:10 }}>
           <Link to={`/profile/${user?.uid}`} style={{ display:'flex', alignItems:'center', gap:9 }}>
-            <div style={{
-              padding:2, borderRadius:'50%',
-              background:'linear-gradient(135deg,#6366f1,#a78bfa)',
-            }}>
-              <img src={avatarUrl(user?.photoURL, user?.displayName)} style={{
-                width:28, height:28, borderRadius:'50%', objectFit:'cover',
-                display:'block', border:'2px solid var(--bg)',
-              }} alt=""/>
-            </div>
-            <span style={{ fontSize:'0.82rem', fontWeight:600, color:'var(--text2)' }}>
+            <img src={avatarUrl(user?.photoURL, user?.displayName)} style={{
+              width:34, height:34, borderRadius:'50%', objectFit:'cover',
+              border:'2px solid var(--border2)',
+            }} alt=""/>
+            <span style={{ fontSize:'0.9rem', fontWeight:700, color:'var(--text)' }}>
               {user?.displayName?.split(' ')[0]}
             </span>
           </Link>
